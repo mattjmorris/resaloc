@@ -1,0 +1,6 @@
+$:.unshift("/usr/local/ruby-1.8.6/lib/ruby/gems/1.8/gems/cucumber-0.1.11/lib")
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new do |t|
+  t.cucumber_opts = "--format pretty"
+end
