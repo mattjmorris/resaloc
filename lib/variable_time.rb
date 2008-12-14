@@ -45,7 +45,3 @@ class VariableTime
   end
 
 end
-
-# TODO: delete this class
-#vt = VariableTime.new(7, 0)
-#30.times {vt.tick; p vt.signal}
