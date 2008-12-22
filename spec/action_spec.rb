@@ -6,7 +6,7 @@ require 'state'
 
 describe Action do
 
-  it "should be initialized with a name, value, and result state" do
+  it "should be initialized with a name, cost, and result state" do
     result_state = mock_state
     a1 = Action.new("action_1", 1, result_state)
     a1.name.should == "action_1"
@@ -15,7 +15,7 @@ describe Action do
   end
   
   it "should automatically create an id for itself" do
-    a1 = Action.new("action_1", -1, mock_state)
+    a1 = Action.new("action_1", 1, mock_state)
     a1.id.nil?.should == false
   end
 

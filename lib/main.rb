@@ -3,10 +3,12 @@ require 'state'
 require 'agent'
 
 state_a = State.new("a", 0)
+state_b = State.new("b", 0)
+state_c = State.new("c", 10)
 
-move_to_b = Action.new("move_to_b", -1, State.new("b", 10))
+move_to_b = Action.new("move_to_b", 1, state_b)
 
-move_to_c = Action.new("move_to_c", -1, State.new("c", 0))
+move_to_c = Action.new("move_to_c", 1, state_c)
 
 state_a.actions = [move_to_b, move_to_c]
 

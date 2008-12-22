@@ -31,6 +31,31 @@ class Agent
 
   private
 
+  def select_action
+
+    normalize_policy_values
+
+    rand_num = rand
+    selected_action = nil
+    cum_preference = 0
+    @policy.each do |action, preference_val|
+      cum_preference += preference_val
+      if cum_preference > rand_num
+        selected_action = action
+        break
+      end
+    end
+
+    @action = selected_action
+
+  end
+
+  def normalize_policy_values
+    sum = 0
+    @policy.each_value { |preference_val| sum += preference_val }
+    @policy.each_value { |preference_val| preference_val = preference_val / sum }
+  end
+
   def initialize_policy
     @policy = {}
     num_actions = @new_state.actions.size
@@ -70,33 +95,9 @@ class Agent
   end
 
   def calculate_reward
-    @reward_minus_cost = @action.value + @new_state.reward
+    @reward_minus_cost = @new_state.reward - @action.cost
     @bank += @reward_minus_cost
   end
 
-  def select_action
-
-    normalize_policy_values
-
-    rand_num = rand
-    selected_action = nil
-    cum_preference = 0
-    @policy.each do |action, preference_val|
-      cum_preference += preference_val
-      if cum_preference > rand_num
-        selected_action = action
-        break
-      end
-    end
-
-    @action = selected_action
-
-  end
-
-  def normalize_policy_values
-    sum = 0
-    @policy.each_value { |preference_val| sum += preference_val }
-    @policy.each_value { |preference_val| preference_val = preference_val / sum }
-  end
 
 end
