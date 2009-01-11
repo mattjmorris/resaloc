@@ -8,7 +8,7 @@ module AutoId
   @@all_ids = []
 
   def <=>(other)
-    self.id <=> other.id
+    self.object_id <=> other.object_id
   end
 
   private
