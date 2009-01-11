@@ -1,3 +1,13 @@
 == Resaloc
 
 A Ruby framework for Reinforcement Learning.
+
+TODO:
+Create a factory for creating state machines with particular features, such as
+n-armed bandits or schedules of reinforcement.
+
+* Decide if actions on state machines should be invoked via state objects or
+state names.  Have to remember that want agent to be able to interact with a state
+machine without having access to all information contained in a state and in an
+action.  But perhaps the Environment object will take care of this, acting as the
+bridge that hides information appropriately.

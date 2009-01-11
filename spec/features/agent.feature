@@ -5,6 +5,6 @@ Feature Agent
   I want to receive relevant information from the Environment
 
   Scenario Current State
-    Given "I am interacting with an Environment"
-    When "I enter a new state"
-    Then "I should be given information about that state"
+    Given I am interacting with an Environment
+    When  I enter a new state
+    Then  I should be given information about that state
