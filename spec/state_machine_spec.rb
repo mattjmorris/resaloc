@@ -52,6 +52,7 @@ describe StateMachine do
 
   end
 
+  # TODO - what is the point of ticking for the state machine?  Does it need to know time for some reason?
   it "should tick" do
 
     state_a = State.new("a", lambda{|tick_count| tick_count * 2})
