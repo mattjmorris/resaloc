@@ -1,8 +1,6 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
 
-require 'state'
-require 'action'
+require File.dirname(__FILE__) + '/../lib/state'
+require File.dirname(__FILE__) + '/../lib/action'
 
 describe State do
 

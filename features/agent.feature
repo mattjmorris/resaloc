@@ -1,4 +1,3 @@
-
 Feature Agent
   In order to decide on my next action
   As an agent

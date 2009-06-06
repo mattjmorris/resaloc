@@ -1,12 +1,12 @@
 # This class represents an action that moves an agent from a start state to a result state (which may be the same state).
 # It has a cost that is represented as a positive integer.
 
-require 'action'
-require 'state'
+require File.dirname(__FILE__) + '/../lib/action'
+require File.dirname(__FILE__) + '/../lib/state'
 
 describe Action do
 
-  it "should have a name, connect two states, and a cost function" do
+  it "should connect two states, have a name, and a cost function" do
     a = mock_state("a")
     b = mock_state("b")
     action = Action.new(a, b, "action_1", lambda{2})
@@ -47,7 +47,7 @@ describe Action do
     action.id.nil?.should == false
   end
 
-  it "should implement comparable " do
+  it "should implement comparable" do
     a1 = Action.new(mock_state, mock_state, "name", lambda{0})
     a2 = Action.new(mock_state, mock_state, "name", lambda{0})
     a3 = Action.new(mock_state, mock_state, "name", lambda{0})
@@ -69,6 +69,8 @@ describe Action do
     action.get_cost(10).should == 20
   end
 
+  private
+  
   def mock_state(name = "state_name")
     state = mock(State)
     state.stub!(:name).and_return(name)

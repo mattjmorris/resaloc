@@ -1,8 +1,8 @@
 
-require 'state_machine'
-require 'state'
-require 'action'
-require 'array_math'
+require File.dirname(__FILE__) + '/../lib/state_machine'
+require File.dirname(__FILE__) + '/../lib/state'
+require File.dirname(__FILE__) + '/../lib/action'
+require File.dirname(__FILE__) + '/../lib/array_math'
 
 class ArmedBanditFactory
 

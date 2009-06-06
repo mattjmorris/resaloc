@@ -1,7 +1,7 @@
 # To change this template, choose Tools | Templates
 # and open the template in the editor.
 
-require 'reward_function_factory'
+require File.dirname(__FILE__) + '/../lib/reward_function_factory'
 
 describe RewardFunctionFactory do
 

@@ -1,5 +1,5 @@
 
-require 'armed_bandit_factory'
+require File.dirname(__FILE__) + '/../lib/armed_bandit_factory'
 
 describe ArmedBanditFactory do
 

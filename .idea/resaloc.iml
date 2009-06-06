@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="false" type="RUBY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="[gem] rspec (v1.2.2, /usr/local/ruby-1.8.6/lib/ruby/gems/1.8/gems/rspec-1.2.2)" level="application" />
+    <orderEntry type="library" name="[gem] builder (v2.1.2, /usr/local/ruby-1.8.6/lib/ruby/gems/1.8/gems/builder-2.1.2)" level="application" />
+    <orderEntry type="library" name="[gem] cucumber (v0.3.11, /usr/local/ruby-1.8.6/lib/ruby/gems/1.8/gems/cucumber-0.3.11)" level="application" />
+    <orderEntry type="library" name="[gem] diff-lcs (v1.1.2, /usr/local/ruby-1.8.6/lib/ruby/gems/1.8/gems/diff-lcs-1.1.2)" level="application" />
+    <orderEntry type="library" name="[gem] polyglot (v0.2.5, /usr/local/ruby-1.8.6/lib/ruby/gems/1.8/gems/polyglot-0.2.5)" level="application" />
+    <orderEntry type="library" name="[gem] term-ansicolor (v1.0.3, /usr/local/ruby-1.8.6/lib/ruby/gems/1.8/gems/term-ansicolor-1.0.3)" level="application" />
+    <orderEntry type="library" name="[gem] treetop (v1.2.5, /usr/local/ruby-1.8.6/lib/ruby/gems/1.8/gems/treetop-1.2.5)" level="application" />
+  </component>
+  <component name="RModuleSettingsStorage">
+    <RMODULE_SETTINGS_STORAGE_ID NAME="NUMBER" VALUE="0" />
+  </component>
+</module>
+
